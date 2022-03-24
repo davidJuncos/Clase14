@@ -170,13 +170,23 @@ nav{
     display: none;
 }
 
-footer div footer-carrito {
- 
+
+div.boton-footer{
+    text-align: center;
 }
-footer div footer-carrito {
- 
+div.boton-footer i{
+    color: #0044AA;
+    font-size: 20px;
+    
+    margin: 10px 0px ;
+    padding: 15px 2px;
+    
 }
+
 footer div.titulo{
-    color: #39b54a ;
+    font-weight: bold;
+    text-align: center;
+}
+footer div.texto{
     text-align: center;
 }
