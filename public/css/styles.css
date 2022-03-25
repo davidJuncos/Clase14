@@ -158,6 +158,10 @@ nav{
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a42f13da132be0480e5b9135da63390c6f3c226
 div.boton-footer{
     text-align: center;
 }
@@ -176,6 +180,7 @@ footer div.titulo{
 }
 footer div.texto{
     text-align: center;
+<<<<<<< HEAD
 }
 
 *{
@@ -245,4 +250,6 @@ main section article i{
     main section article{
         width: 22%;
      }
+=======
+>>>>>>> 0a42f13da132be0480e5b9135da63390c6f3c226
 }
