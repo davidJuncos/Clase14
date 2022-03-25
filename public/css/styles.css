@@ -79,14 +79,15 @@ div.burger-menu i{
     width: 40px;
 }
 
-article div.main-article{
-    width: 100%;
-}
+
 
 .price{
     font-size: 18px;
+    flex: 30%;
 }
-
+.discount{
+    flex: 30%;
+}
 .discount,
 .description{
     font-size: 16px;
@@ -107,9 +108,11 @@ main{
     margin:0 auto;
 }
 
+
 main section article{
     background-color: #fff;
     margin: 10px 0px;
+
 }
 
 main section article img{
@@ -120,41 +123,25 @@ main section article i,
 .discount{
     color: #39b54a;
 }
-
+/*
 .main-article{
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
-/*Table*/
-@media screen and (min-width:361px) and (max-width:769px) {
-    .description{
-        display: block;
-    }
-    main section article{
-        box-shadow: 0 0 10px rgb(100,100,100);
-    }
-    nav{
-        display: block;
-    }
-    .burger-menu{
-        display: none;
-    }
+*/
+
+main section article .main-article{
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
 }
-/*Desktop*/
-@media screen and (min-width:769px) {
-    .description{
-        display: block;
-    }
-    main section article{
-        box-shadow: 0 0 10px rgb(100,100,100);
-    }
-    nav{
-        display: block;
-    }
-    .burger-menu{
-        display: none;
-    }
-}
+
+
+
 
 nav{
     display: none;
@@ -166,17 +153,96 @@ nav{
     padding: 5px;
     font-size: 16px;
 }
+
 .description{
     display: none;
 }
 
-footer div footer-carrito {
- 
-}
-footer div footer-carrito {
- 
-}
-footer div.titulo{
-    color: #39b54a ;
+div.boton-footer{
     text-align: center;
+}
+div.boton-footer i{
+    color: #0044AA;
+    font-size: 20px;
+    
+    margin: 10px 0px ;
+    padding: 15px 2px;
+    
+}
+
+footer div.titulo{
+    font-weight: bold;
+    text-align: center;
+}
+footer div.texto{
+    text-align: center;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+/*Cel*/
+@media (max-width:320px)  {
+   
+        main section article{
+            width: 73%;
+        }
+    }
+    /*Table*/
+@media (min-width:361px) {
+    .description{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0 0 10px rgb(100,100,100);
+    }
+    nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section article{
+        width: 45%;
+     }
+     main section .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+/*Desktop*/
+@media (min-width:769px) {
+    .description{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0 0 10px rgb(100,100,100);
+    }
+    nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section article{
+        width: 22%;
+     }
 }
