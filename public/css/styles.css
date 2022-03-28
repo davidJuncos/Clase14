@@ -17,10 +17,13 @@ p{
 }
 div.top-header{
     padding: 5%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 header{
     background-color: #EAC926;
+    
 }
 
 header div.logo{
@@ -32,7 +35,7 @@ header div.logo{
 }
 header nav{
     font-size: 12px;
-    
+    display: flex;
 }
 
 header ul li{
@@ -64,6 +67,7 @@ header div.top-header p{
     margin-top: 10px;
 }
 
+
 div.burger-menu{
     text-align: center;
 }
@@ -78,8 +82,6 @@ div.burger-menu i{
     padding: 15px 10px;
     width: 40px;
 }
-
-
 
 .price{
     font-size: 18px;
@@ -141,12 +143,6 @@ main section article .main-article{
 }
 
 
-
-
-nav{
-    display: none;
-}
-
 .main-article i{
     border: 1px solid #39b54a;
     border-radius: 50%;
@@ -158,10 +154,6 @@ nav{
     display: none;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0a42f13da132be0480e5b9135da63390c6f3c226
 div.boton-footer{
     text-align: center;
 }
@@ -180,9 +172,8 @@ footer div.titulo{
 }
 footer div.texto{
     text-align: center;
-<<<<<<< HEAD
-}
 
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -208,19 +199,36 @@ main section article i{
         main section article{
             width: 73%;
         }
+       nav{
+        display: none;
+       }
     }
     /*Table*/
 @media (min-width:361px) {
+
     .description{
         display: block;
     }
     main section article{
         box-shadow: 0 0 10px rgb(100,100,100);
     }
-    nav{
-        display: block;
+    
+    header div.sub-titulos1{
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin-right: 20px;
+        justify-content: flex-start ;
+       
     }
-    .burger-menu{
+
+    header div.sub-titulos2{
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin-left: 20px;
+        justify-content: flex-end;
+       
+    }
+   .burger-menu{
         display: none;
     }
     main section article{
@@ -232,6 +240,7 @@ main section article i{
         justify-content: space-between;
         width: 100%;
     }
+
 }
 /*Desktop*/
 @media (min-width:769px) {
@@ -241,8 +250,19 @@ main section article i{
     main section article{
         box-shadow: 0 0 10px rgb(100,100,100);
     }
-    nav{
-        display: block;
+    
+    header div.sub-titulos1{
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin-right: 20px;
+        justify-content: flex-start ;
+    }
+
+    header div.sub-titulos2{
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin-left: 20px;
+        justify-content: flex-end;
     }
     .burger-menu{
         display: none;
@@ -250,6 +270,4 @@ main section article i{
     main section article{
         width: 22%;
      }
-=======
->>>>>>> 0a42f13da132be0480e5b9135da63390c6f3c226
 }
