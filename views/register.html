@@ -7,6 +7,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script>
+            function validar(){
+                if(document.getElementById("password-verify").value==document.getElementById("confirmacion").value){
+                document.getElementById("password-verify").style.backgroundColor="green"
+                document.getElementById("password-error-message").innerHTML=""
+            }else{
+                document.getElementById("password-verify").style.backgroundColor="pink"
+                document.getElementById("password-error-message").innerHTML="La contraseña no coinciden"
+            }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -17,7 +28,7 @@
                 <div class="form" action="#" method="GET">
                     <div class="input">Buscar productos, marcas y más</div>
                     <div class="submit"><i class="fa fa-search"></i></div>
-
+                    
                 </div>
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
@@ -30,9 +41,8 @@
                 </div>
 
                 <div class="sub-titulos2"></div>
-                        <a href="/register" class="sub-titulos-texto">Creá tu cuenta <i class="far fa-id-card"></i></a>
-                        <a href="/login" class="sub-titulos-texto">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                        
+                        <p class="sub-titulos-texto"> Creá tu cuenta <i class="far fa-id-card"></i></p></div>
+                        <p class="sub-titulos-texto"> Ingresá <i class="fas fa-sign-in-alt"></i></p></div>
                         <p class="sub-titulos-texto"> Mis compras <i class="fas fa-shopping-basket"></i></p></div>
                 </div>
             </nav>
@@ -40,6 +50,55 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
+        
+        <form action="/views/register.html" method="POST" class="form">
+            <p>
+                <label for="nombre">Ingrese el nombre y apellido</label>
+                <input type="text" name="nombre" id="nombre" minlength=8>
+            </p>
+            <p>
+                <label for="usuario">Ingrese nombre usuario</label>
+                <input type="text" name="usuario" id="usuario" minlength=8>
+            </p>
+            <p>
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha">
+            </p>
+            <p>
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio">
+            </p>
+            <p>
+                <input type="radio" name="perfil" value="Comprar">
+                <label for="Comprar">Comprar</label>
+                <input type="radio" name="perfil" value="Vender">
+                <label for="Vender">Vender</label>                
+            </p>
+            <h3>Intereses</h3>
+            <div class="intereses">
+                <input type="checkbox" name="intereses" value="electro">
+                <label for="electro">Eletro</label>
+                <input type="checkbox" name="intereses" value="moda">
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="intereses" value="hogar">
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="intereses" value="juguteria">
+                <label for="juguteria">Juguteria</label>
+                <input type="checkbox" name="intereses" value="vida-sana">
+                <label for="vida-sana">Vida-Sana</label>
+            </div>
+            <input type="file" name="foto" accept=".jpg">
+            <div class="passwords">
+                <input type="passwords" name="password-verify" required minlength=8 placeholder="Escribe tu contraseña">
+                <input type="passwords" name="confirmacion" required minlength=8 placeholder="Repite tu contraseña" onkeyup="validar()">
+                <div>
+                    <span id ="password-error-message"></span>
+                </div>
+            </div>
+            <button type="submit" name="enviar">Enviar</button>
+            <button type="reset" name="borrar">Borrar</button>
+        </form>
+
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>

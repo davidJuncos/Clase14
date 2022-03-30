@@ -61,6 +61,10 @@ header .form .submit{
     width: 10%;
 }
 
+.form input:invalid{
+    background-color: pink;
+}
+
 header div.top-header p{
     width: 100%;
     text-align: center;
