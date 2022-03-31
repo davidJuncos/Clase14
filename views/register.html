@@ -54,19 +54,19 @@
         <form action="/views/register.html" method="POST" class="form">
             <p>
                 <label for="nombre">Ingrese el nombre y apellido</label>
-                <input type="text" name="nombre" id="nombre" minlength=8>
+                <input type="text" name="nombre" id="nombre" minlength=8 class="control">
             </p>
             <p>
                 <label for="usuario">Ingrese nombre usuario</label>
-                <input type="text" name="usuario" id="usuario" minlength=8>
+                <input type="text" name="usuario" id="usuario" minlength=8 class="control">
             </p>
             <p>
                 <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha">
+                <input type="date" name="fecha" class="control">
             </p>
             <p>
                 <label for="domicilio">Domicilio</label>
-                <input type="text" name="domicilio">
+                <input type="text" name="domicilio" class="control">
             </p>
             <p>
                 <input type="radio" name="perfil" value="Comprar">
@@ -87,10 +87,10 @@
                 <input type="checkbox" name="intereses" value="vida-sana">
                 <label for="vida-sana">Vida-Sana</label>
             </div>
-            <input type="file" name="foto" accept=".jpg">
+            <input type="file" name="foto" accept=".jpg" class="control"> 
             <div class="passwords">
-                <input type="passwords" name="password-verify" required minlength=8 placeholder="Escribe tu contraseña">
-                <input type="passwords" name="confirmacion" required minlength=8 placeholder="Repite tu contraseña" onkeyup="validar()">
+                <input type="passwords" name="password-verify" required minlength=8 placeholder="Escribe tu contraseña" class="control">
+                <input type="passwords" name="confirmacion" required minlength=8 placeholder="Repite tu contraseña" onkeyup="validar()" class="control">
                 <div>
                     <span id ="password-error-message"></span>
                 </div>
@@ -102,50 +102,7 @@
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>
-        <main>
-            <section class="offers">
-                <h3>Ofertas</h3>
-                <div class="products">
-                    <article>
-                        <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-
-                            <p class="price">$6.770</p>
-                            <p class="discount">40% off</p>
-                            <h4 class="description">Cafetera Moulinex</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                            <h4 class="description">MacBook Pro 2019</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                        <h4 class="description">Samsung Galaxy S10</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$23.200</p>
-                            <p class="discount">5% off</p>
-                            <h4 class="description">SmartTv Samsung 43"</h4>
-                        </div>
-                    </article>
-                </div>  
-            </section>
-        </main>
+      
         <footer>
             <div class="footer-carrito"></div>
                 <div class="boton-footer"><i class="fas fa-credit-card"></i></div>
