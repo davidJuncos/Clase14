@@ -24,7 +24,10 @@ div.top-header{
 header{
     background-color: #EAC926;
     padding: 20px;
+    /*margin-top:200px ;*/
+    width: 100%;
     position: fixed;
+    top: 0;
 }
 
 header div.logo{
@@ -143,6 +146,9 @@ h3,
     color: #666;
 }
 
+.banner{
+    margin-top:200px ;
+}
 section.banner img{
     width: 100%;
 }
@@ -234,6 +240,48 @@ main section article i{
     width: 100%;
     padding: 8px 8px;
 }
+.control-pass{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 8px;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+}
+.form-button{
+    padding: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.form-option{
+    padding: 8px 8px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.form-option label{
+    padding: 8px 8px;
+}
+.password{
+    width: 100px;
+    padding: 8px 8px;
+}
+.control-pass{
+    padding: 8px 8px;
+}
+.form button{
+    padding: 0.5em ,1em;
+    border: none;
+    background: #3483fa;
+    cursor: pointer;
+    /*width: 750px;*/
+    width: 100%;
+    border-radius: 4px;
+}
 /*Cel*/
 @media (max-width:359px)  {
    .form{width: 50%;
@@ -252,6 +300,10 @@ main section article i{
     }
     .sub-titulos2{
     display: none;
+    }
+    .control{
+        width: 100%;
+        padding: 8px 8px;
     }
     }
     /*Table*/
@@ -291,6 +343,10 @@ main section article i{
         justify-content: space-between;
         width: 100%;
     }
+    .control{
+        width: 100%;
+        padding: 8px 8px;
+    }
 
 }
 /*Desktop*/
@@ -326,4 +382,8 @@ main section article i{
     main section article{
         width: 22%;
      }
+     .control{
+        width: 100%;
+        padding: 8px 8px;
+    }
 }

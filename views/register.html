@@ -10,7 +10,7 @@
         <script>
             function validar(){
                 if(document.getElementById("password-verify").value==document.getElementById("confirmacion").value){
-                document.getElementById("password-verify").style.backgroundColor="green"
+                document.getElementById("confirmacion").style.backgroundColor="green"
                 document.getElementById("password-error-message").innerHTML=""
             }else{
                 document.getElementById("password-verify").style.backgroundColor="pink"
@@ -18,6 +18,7 @@
             }
             }
         </script>
+   
     </head>
     <body>
         <header>
@@ -68,12 +69,12 @@
                 <label for="domicilio">Domicilio</label>
                 <input type="text" name="domicilio" class="control">
             </p>
-            <p>
-                <input type="radio" name="perfil" value="Comprar">
-                <label for="Comprar">Comprar</label>
-                <input type="radio" name="perfil" value="Vender">
-                <label for="Vender">Vender</label>                
-            </p>
+            
+                <div class="form-option">
+                    <label for="Comprar"><input type="radio" name="perfil" id = "comprar" value="Comprar">Comprar</label>
+                    <label for="Vender"><input type="radio" name="perfil" id = "vender" value="Vender">Vender</label>                
+                </div>
+            
             <h3>Intereses</h3>
             <div class="intereses">
                 <input type="checkbox" name="intereses" value="electro">
@@ -89,14 +90,16 @@
             </div>
             <input type="file" name="foto" accept=".jpg" class="control"> 
             <div class="passwords">
-                <input type="passwords" name="password-verify" required minlength=8 placeholder="Escribe tu contraseña" class="control">
-                <input type="passwords" name="confirmacion" required minlength=8 placeholder="Repite tu contraseña" onkeyup="validar()" class="control">
+                <input type="passwords" name="password-verify" id = "password-verify" required minlength=8 placeholder="Escribe tu contraseña"  class="control-pass">
+                <input type="passwords" name="confirmacion" id="confirmacion" required minlength=8 placeholder="Repite tu contraseña" onkeyup="validar()" class="control-pass">
                 <div>
                     <span id ="password-error-message"></span>
                 </div>
             </div>
-            <button type="submit" name="enviar">Enviar</button>
-            <button type="reset" name="borrar">Borrar</button>
+            <div class="form-button">
+                <button type="submit" name="enviar">Enviar</button>
+                <button type="reset" name="borrar">Borrar</button>
+            </div>
         </form>
 
         <section class="banner">
