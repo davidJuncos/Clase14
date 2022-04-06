@@ -26,8 +26,8 @@ header{
     padding: 20px;
     /*margin-top:200px ;*/
     width: 100%;
-    position: fixed;
-    top: 0;
+    /*position: fixed;
+    top: 0;*/
 }
 
 header div.logo{
@@ -148,7 +148,7 @@ h3,
 }
 
 .banner{
-    margin-top:280px ;
+   /* margin-top:280px ;*/
 }
 section.banner img{
     width: 100%;
@@ -284,6 +284,17 @@ main section article i{
 
 main section article:hover  {
     box-shadow: 0 0 10px rgb(100,100,100);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+footer footer.signature{
+    display: block;
+    margin: 20px;
 }
 
 /*Cel*/
