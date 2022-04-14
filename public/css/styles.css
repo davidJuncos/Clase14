@@ -93,10 +93,11 @@ header div.top-header p{
     margin-top: 10px;
 }
 
-/*.sub-titulos-texto{
-    padding: 0 1px;
+.sub-titulos-texto{
+    display: flex;
+    
 }
-*/
+
 /*
 .texto-sub-titulos2{
     padding: 0 20px;
@@ -310,13 +311,21 @@ footer .footer-item .iconos{
     font-size: 34px;
     color: #0022AA;
 }
+.heard-option-botton-izq{
+    display: flex;
+
+}
 /*Cel*/
 @media (max-width:359px)  {
     #descripcion:hover .description{
         display: block;
     }
-    
-   .form{width: 50%;
+    .iconos{
+            display: flex;
+            justify-content: center;
+    }
+
+    .form{width: 50%;
     }
     .logo{width: 50%;
     }
@@ -347,7 +356,14 @@ footer .footer-item .iconos{
 
     /*Table*/
 @media (min-width:360px) {
-
+    .iconos{
+        display: flex;
+        justify-content: center;
+}
+.fas fa-credit-card{
+    display: flex;
+    justify-content: center;
+}
     #descripcion:hover .description{
         display: block;
     }
@@ -390,6 +406,10 @@ footer .footer-item .iconos{
 
 /*Desktop*/
 @media (min-width:769px) {
+    .iconos{
+        display: flex;
+        justify-content: center;
+}
     #descripcion:hover .description{
         display: block;
     }
@@ -423,7 +443,7 @@ footer .footer-item .iconos{
         padding: 8px 8px;
     }
     footer .footer-item{
-        width: 26%;
+        width: 28%;
     }
     /*
     article:hover  .main-article  .description{
