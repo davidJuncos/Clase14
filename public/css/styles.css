@@ -15,30 +15,34 @@ h3{
 p{
     font-size: 12px;
 }
-div.top-header{
+.top-header{
     padding: 5%;
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 header{
+ 
     background-color: #EAC926;
     padding: 20px;
-    /*margin-top:200px ;*/
     width: 100%;
-    /*position: fixed;
-    top: 0;*/
+    height: 200px;    
+    top:0;
+ /*  z-index: 10;*/
 }
 
 header div.logo{
-    width: 100%;
-    padding: 10px;
+    width: 200px;
+    display: block;
 }
+/*
 header .heard-option{
     font-size: 12px;
     margin: 0 5px;
     padding: 0 15px;
 }
+*/
 
 header nav{
 
@@ -311,12 +315,25 @@ footer .footer-item .iconos{
     font-size: 34px;
     color: #0022AA;
 }
+/*
 .heard-option-botton-izq{
     display: flex;
 
 }
+*/
+.heard-option-botton-izq a{
+font-size: 12px;
+}
+.heard-option{
+    display: none;
+    /*display: flex;*/
+
+}
 /*Cel*/
-@media (max-width:359px)  {
+/*@media (max-width:359px)  {
+    
+
+
     #descripcion:hover .description{
         display: block;
     }
@@ -352,10 +369,20 @@ footer .footer-item .iconos{
     }
   
      
-  
+  */
 
+  .form-login{
+    margin: 15px auto;
+    width: 70%;
+    align-content: center;
+    margin-top: 50px;
+}
     /*Table*/
 @media (min-width:360px) {
+
+    .top-header{
+        flex-direction: row;
+    }
     .iconos{
         display: flex;
         justify-content: center;
@@ -406,6 +433,22 @@ footer .footer-item .iconos{
 
 /*Desktop*/
 @media (min-width:769px) {
+    /*.top-header{
+        display: flex;
+        justify-content: space-between;
+    }*/
+    
+    .heard {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heard-option{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .iconos{
         display: flex;
         justify-content: center;
@@ -458,4 +501,9 @@ article .main-article i{
 
  article:hover .main-article i{
 transform: rotate(-90deg)
+}
+
+@media (min-width:1200px) {
+
+    .logo{width: 350px;}
 }
