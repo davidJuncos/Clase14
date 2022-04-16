@@ -27,7 +27,7 @@ header{
     background-color: #EAC926;
     padding: 20px;
     width: 100%;
-    height: 200px;    
+    height: 240px;    
     top:0;
  /*  z-index: 10;*/
 }
@@ -333,6 +333,15 @@ font-size: 12px;
     flex-wrap: nowrap;
     padding: 8px 8px;
 }
+.texto{
+    text-align: center;
+}
+.parrafo-destacado{
+    padding: 5px 0;
+}
+.header{
+    height: 320px;
+}
 /*Cel*/
 @media (max-width:359px)  {
     footer div.texto{
@@ -378,12 +387,24 @@ font-size: 12px;
         flex-wrap: wrap;
     }
     footer{    display: flex;
-        flex-wrap: wrap;}
+        flex-wrap: wrap;
+    }
+     
+    .texto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        width: 300px;
+    }
+    
+
 }
 /*********************************************************/
                             /*Table*/
 /*********************************************************/
 @media (min-width:360px) {
+    
 
     .top-header{
         flex-direction: row;
@@ -405,9 +426,7 @@ font-size: 12px;
         /*margin: 0 15px;*/
         justify-content: flex-end;
     }
-   .burger-menu{
-        display: none;
-    }
+
     main section article{
         width: 45%;
      }
@@ -435,16 +454,21 @@ font-size: 12px;
         width: 500px;
     }
     .texto{
-        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items:center;
+        width: 300px;
     }
     footer div.texto{
         display: flex;
         flex-wrap: wrap;
     }
+    .titulo{
+        margin: 0 180px;
+    }
+    
+    
 }
 
 /*Desktop*/
@@ -513,6 +537,9 @@ font-size: 12px;
     footer div.texto{
         display: flex;
         flex-wrap: wrap;
+    }
+    .titulo{
+        margin: 0 20px;
     }
 }
 article .main-article i{
