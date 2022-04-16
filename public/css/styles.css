@@ -35,6 +35,7 @@ header{
 header div.logo{
     /*width: 200px;*/
     display: block;
+    width: 50%;
 }
 /*
 header .heard-option{
@@ -343,6 +344,9 @@ font-size: 12px;
     height: 320px;
 }
 /*Cel*/
+.footer-signature{
+    text-align: left;
+}
 @media (max-width:359px)  {
     footer div.texto{
         display: flex;
@@ -359,8 +363,9 @@ font-size: 12px;
     .form{width: 50%;
     }
     
-    .logo{width:200px;
-    }
+    /*.logo{
+        width:200px;
+    }*/
     main section article{
         width: 73%;
     }
@@ -450,9 +455,9 @@ font-size: 12px;
         justify-content: center;
         align-items:center;
     }
-    .logo{
+    /*.logo{
         width: 500px;
-    }
+    }*/
     .texto{
         display: flex;
         flex-wrap: wrap;
@@ -467,7 +472,15 @@ font-size: 12px;
     .titulo{
         margin: 0 180px;
     }
-    
+    .burger-menu{
+        display: none;
+    }
+    .heard-option{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
     
 }
 
@@ -519,9 +532,9 @@ font-size: 12px;
     footer .footer-item{
         width: 28%;
     }
-    .logo{
+    /*.logo{
         width: 500px;
-    }
+    }*/
     .texto{
         display: flex;
         flex-wrap: wrap;
@@ -552,7 +565,7 @@ transform: rotate(-90deg)
 
 @media (min-width:1200px) {
     .top-header{margin-top:10px ;}
-    .logo{width: 500px;
-    }
+    /*.logo{width: 500px;
+    }*/
 
 }
