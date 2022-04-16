@@ -52,7 +52,7 @@
             </div>
         </header>
         
-        <form action="/views/register.html" method="POST" class="form">
+        <form action="/views/register.html" method="POST" class="control">
             <p>
                 <label for="nombre">Ingrese el nombre y apellido</label>
                 <input type="text" name="nombre" id="nombre" minlength=8 class="control">
@@ -77,16 +77,26 @@
             
             <h3>Intereses</h3>
             <div class="intereses">
-                <input type="checkbox" name="intereses" value="electro">
-                <label for="electro">Eletro</label>
-                <input type="checkbox" name="intereses" value="moda">
-                <label for="moda">Moda</label>
-                <input type="checkbox" name="intereses" value="hogar">
-                <label for="hogar">Hogar</label>
-                <input type="checkbox" name="intereses" value="juguteria">
-                <label for="juguteria">Juguteria</label>
-                <input type="checkbox" name="intereses" value="vida-sana">
-                <label for="vida-sana">Vida-Sana</label>
+                <div class="checkBox">
+                    <input type="checkbox" name="intereses" value="electro">
+                    <label for="electro">Eletro</label>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" name="intereses" value="moda">
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" name="intereses" value="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" name="intereses" value="juguteria">
+                    <label for="juguteria">Juguteria</label>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" name="intereses" value="vida-sana">
+                    <label for="vida-sana">Vida-Sana</label>
+                </div>
             </div>
             <input type="file" name="foto" accept=".jpg" class="control"> 
             <div class="passwords">

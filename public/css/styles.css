@@ -33,7 +33,7 @@ header{
 }
 
 header div.logo{
-    width: 200px;
+    /*width: 200px;*/
     display: block;
 }
 /*
@@ -99,7 +99,6 @@ header div.top-header p{
 
 .sub-titulos-texto{
     display: flex;
-    
 }
 
 /*
@@ -218,8 +217,7 @@ footer div.titulo{
     text-align: center;
 }
 footer div.texto{
-    text-align: center;
-
+    display: flex;
 }
 *{
     margin: 0px;
@@ -315,36 +313,44 @@ footer .footer-item .iconos{
     font-size: 34px;
     color: #0022AA;
 }
-/*
-.heard-option-botton-izq{
-    display: flex;
-
+.iconos{
+    margin:  0 280px ; 
 }
-*/
 .heard-option-botton-izq a{
 font-size: 12px;
 }
 .heard-option{
     display: none;
-    /*display: flex;*/
-
+}
+.form-login{
+    margin: 15px auto;
+    width: 70%;
+    align-content: center;
+    margin-top: 50px;
+}
+.checkBox{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px 8px;
 }
 /*Cel*/
-/*@media (max-width:359px)  {
-    
-
-
+@media (max-width:359px)  {
+    footer div.texto{
+        display: flex;
+        flex-wrap: wrap;
+    }
     #descripcion:hover .description{
         display: block;
     }
     .iconos{
-            display: flex;
-            justify-content: center;
+        display: flex;
+        justify-content: center;
+        width: 1000px;
     }
-
     .form{width: 50%;
     }
-    .logo{width: 50%;
+    
+    .logo{width:200px;
     }
     main section article{
         width: 73%;
@@ -366,31 +372,22 @@ font-size: 12px;
     article:hover  .main-article  .description{
         display: block;
     }
+    .banner{margin-top: 50px}
+    .texto{
+        display: flex;
+        flex-wrap: wrap;
     }
-  
-     
-  */
-
-  .form-login{
-    margin: 15px auto;
-    width: 70%;
-    align-content: center;
-    margin-top: 50px;
+    footer{    display: flex;
+        flex-wrap: wrap;}
 }
-    /*Table*/
+/*********************************************************/
+                            /*Table*/
+/*********************************************************/
 @media (min-width:360px) {
 
     .top-header{
         flex-direction: row;
     }
-    .iconos{
-        display: flex;
-        justify-content: center;
-}
-.fas fa-credit-card{
-    display: flex;
-    justify-content: center;
-}
     #descripcion:hover .description{
         display: block;
     }
@@ -401,7 +398,6 @@ font-size: 12px;
         /*margin: 0 15px;*/
         justify-content:flex-start;
     }
-
     .sub-titulos2{
         display: flex;
         flex-wrap: nowrap;
@@ -429,15 +425,30 @@ font-size: 12px;
     article:hover  .main-article  .description{
         display: block;
     }
+    .footer-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    .logo{
+        width: 500px;
+    }
+    .texto{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    footer div.texto{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /*Desktop*/
 @media (min-width:769px) {
-    /*.top-header{
-        display: flex;
-        justify-content: space-between;
-    }*/
-    
     .heard {
         display: flex;
         justify-content: space-between;
@@ -449,10 +460,6 @@ font-size: 12px;
         justify-content: space-between;
     }
 
-    .iconos{
-        display: flex;
-        justify-content: center;
-}
     #descripcion:hover .description{
         display: block;
     }
@@ -488,12 +495,25 @@ font-size: 12px;
     footer .footer-item{
         width: 28%;
     }
-    /*
-    article:hover  .main-article  .description{
-        display: block;
+    .logo{
+        width: 500px;
     }
-
-*/
+    .texto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    .footer-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    footer div.texto{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 article .main-article i{
     transition: transform 450ms;
@@ -504,6 +524,8 @@ transform: rotate(-90deg)
 }
 
 @media (min-width:1200px) {
+    .top-header{margin-top:10px ;}
+    .logo{width: 500px;
+    }
 
-    .logo{width: 350px;}
 }
